@@ -10,7 +10,7 @@
 /dev/block/bootdevice/by-name/userdata                /data              ext4    nosuid,nodev,barrier=1,noauto_da_alloc,discard  wait,check,encryptable=footer
 
 /dev/block/bootdevice/by-name/boot                    /boot              emmc    defaults                                        recoveryonly
-/dev/block/bootdevice/by-name//recovery               /recovery          emmc    defaults                                        recoveryonly
+/dev/block/bootdevice/by-name/recovery                /recovery          emmc    defaults                                        recoveryonly
 
-/devices/soc.0/7864900.sdhci/mmc_host                 /storage/sdcard1   vfat    nosuid,nodev                                    wait,voldmanaged=sdcard1:auto
-/devices/platform/msm_hsusb                           /storage/usbotg    vfat    nosuid,nodev                                    wait,voldmanaged=usbotg:auto
+/devices/soc.0/7864900.sdhci/mmc_host                 /storage/sdcard1   auto    defaults                                    voldmanaged=sdcard1:auto
+/devices/platform/msm_hsusb                           /storage/usbotg    auto    defaults                                    voldmanaged=usbotg:auto
