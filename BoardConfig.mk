@@ -37,6 +37,9 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 
+# Include overlays
+DEVICE_PACKAGE_OVERLAYS := device/bq/vegetalte/overlay
+
 # TWRP-Specific
 TARGET_RECOVERY_INITRC := device/bq/vegetalte/recovery/init.rc
 TARGET_RECOVERY_FSTAB := device/bq/vegetalte/recovery/etc/recovery.fstab
